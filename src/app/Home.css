@@ -1,0 +1,20 @@
+.bt {
+    padding:200px 20px 200px 20px;
+    background: url(../images/hero-image.png);
+}
+
+.tool {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.timer {
+    width: 20%;
+    height: 20%;
+}
+
+.calculator {
+    width: 20%;
+    height: 20%;
+}
