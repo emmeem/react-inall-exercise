@@ -31,7 +31,7 @@ class Calculator extends Component {
         });
     }
 
-    number = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+    numAndsym = ["+","-","x", 0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 
     render() {
         return (
@@ -40,12 +40,7 @@ class Calculator extends Component {
                 <div>
                     <input type="text" value={this.state.snum} />
                 </div>
-                <p>
-                    <input type="button" value="+" onClick={this.setNum} />
-                    <input type="button" value="-" onClick={this.setNum} />
-                    <input type="button" value="x" onClick={this.setNum} />
-                </p>
-                {this.number.map((num) =>
+                {this.numAndsym.map((num) =>
                     <input type="button" value={num} onClick={this.setNum} />)}
                 <p>
                     <input type="button" value="Clear" onClick={this.reset} />
@@ -56,5 +51,4 @@ class Calculator extends Component {
         );
     }
 }
-
 export default Calculator;
